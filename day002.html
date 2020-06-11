@@ -8,12 +8,34 @@
 
         <!-- <script src="static/index.js"></script> -->
 
+        <link rel="stylesheet" href="123">
+
+        <link rel="stylesheet" href="223">
+
+        <link rel="stylesheet" href="custom.css">
         <style>
 
-            /* *{
+            div{
+
+
+            }
+
+            .div1{
+
+
+            }
+
+            #div1{
+                height: 100px;
+            }
+
+
+
+            *{
                 margin: 0;
                 padding: 0;
-            } */
+                /* font-size: 0px; */
+            }
 
             /* .div1{
                 background-image: url(http://by-image.oss-cn-shanghai.aliyuncs.com/Pre/drumkit/cover.jpg);
@@ -70,7 +92,7 @@
                 margin-left:100px;
             } */
 
-            .div1{
+            /* .div1{
                 height: 200px;
                 width: 200px;
                 background-color: aquamarine;
@@ -82,7 +104,29 @@
                 height: 200px;
                 width: 200px;
                 background-color: red;
+            } */
+
+            /* .div1{
+
             }
+
+            #div1{
+
+            } */
+
+            /* .parent .child{
+                background-color: aqua;
+                height: 200px;
+            } */
+
+            /* .parent>.child{
+                background-color:red;
+                height: 200px;
+            } */
+
+            /* h1,div,.child{
+                background-color: aquamarine;
+            } */
 
         </style>
 
@@ -224,14 +268,38 @@
             We are banyuan  school of IT education.
         </div> -->
 
-        <div class="div1"> 
+        <!-- <div style="display:inline-block; width:200px; height: 200px; background-color: red;"></div>
 
-            我们是半圆计算机培训学校。
+        <span style=" display:inline-block; height: 200px; background-color: yellow; width: 200px; font-size:16px; vertical-align:bottom">111111</span> -->
 
+        <!-- <div style="height: 200px; width: 200px; background-color: red;
+        display: inline-block;
+        "></div>
+
+        <span style="width: 200px; height: 200px; background-color: aquamarine;
+        display: inline-block; font-size: 16px;vertical-align:top;
+        ">123</span> -->
+
+        <div class="parent">
+
+            <div class="child"> 
+                banyuan
+                
+                <div class="child" style="height: 100px;">
+
+                    test
+                </div>
+
+                <h1 class="child"> 123 </h1>
             
+            </div>
+
+            <div > banyuan </div>
+
+            <div > banyuan </div>
         </div>
 
-        <span class="span1"></span>
-    
+        <div class="child"> banyuan </div>
+        
     </body>
 </html>
