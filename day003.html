@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <style>
+
+            /* 伪类 */
+            /* a:link{
+                color: blueviolet;
+            } */
+
+            /* a:visited{
+
+                color: chartreuse;
+            }
+
+            a:hover{
+                color: bisque;
+            }
+
+            a:active{
+                color: aqua;
+            }         */
+            
+
+            /* 伪元素 */
+            .div1::after{
+                content: " after";
+            }
+
+            .div1::before{
+                content:"before ";
+                /* display: block; */
+            }
+        </style>
+    </head>
+
+    <body>
+        
+
+        <!-- 伪类 -->
+
+        <!-- <a href="#"> test </a> -->
+
+        <!-- 伪元素 -->
+        <div class="div1"><span>123</span> content <span>222</span></div>
+
+    </body>
+</html>
