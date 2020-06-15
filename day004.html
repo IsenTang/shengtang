@@ -105,7 +105,99 @@
                 background-color: #f08844;
                 float: right;
             } */
+            
+            /* 动画 */
 
+            /* .container{
+                width: 300px;
+                height: 300px;
+                margin: 100px auto;
+                background-color: aqua;
+                transition: 1s height;
+            } */
+
+            /* .container:hover{ */
+
+                /* transform: rotate(45deg); */
+
+                /* transform: scale(1.2); */
+
+                /* width: 500px;
+                height: 500px; */
+                /* transform: translateY(30px); */
+            /* } */
+
+            /* 心 */
+
+            /* body{
+                background-color:  black;
+            }
+
+            .container{
+                width: 400px;
+                height: 500px;
+                position: relative;
+                margin: 100px auto;
+                animation: heartbeat 0.5s linear infinite alternate;
+            }
+
+            .child{
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                background-color: red;
+                border-radius: 50%;
+            }
+
+            .left{
+                left: 40px;
+            }
+
+            .right{
+                right:40px;
+            }
+
+            .bottom{
+                position: absolute;
+                width: 180px;
+                height: 180px;
+                top:84px;
+                left:110px;
+                background-color: red;
+                transform: rotate(45deg);
+            }
+
+            @keyframes heartbeat {
+                from{}
+                to{
+                    transform: scale(1.2);
+                }
+            } */
+
+            .container{
+                width: 400px;
+                height: 500px;
+                border: 1px solid black;
+                margin: 100px auto;
+            }
+
+            .container:hover{
+                animation: loop 3.5s  1 backwards;
+            }
+
+            @keyframes loop {
+
+
+                0%{
+                    background-color: aqua;
+                }
+
+                50%{
+                    background-color: red;
+                }
+
+                100%{background-color: blanchedalmond;}
+            }
 
         </style>
     </head>
@@ -138,6 +230,18 @@
         <!-- <div class="left">left</div>
         <div class="right">right</div>
         <div class="mid">mid</div> -->
+
+        
+        <!-- 动画 -->
+        <!-- <div class="container"></div> -->
+
+
+        <div class="container">
+
+            <!-- <div class="child left"></div>
+            <div class="child right"></div>
+            <div class="bottom"></div> -->
+        </div>
         
 
     </body>
