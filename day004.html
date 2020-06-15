@@ -174,7 +174,7 @@
                 }
             } */
 
-            .container{
+            /* .container{
                 width: 400px;
                 height: 500px;
                 border: 1px solid black;
@@ -197,7 +197,41 @@
                 }
 
                 100%{background-color: blanchedalmond;}
+            } */
+
+            /* z变换 */
+            .container{
+                width: 200px;
+                height: 200px;
+                background-color: #fb3;
+                /* border: 1px solid black; */
+                margin:100px auto;
+                position:relative;
             }
+
+            .child{
+                width: 30px;
+                height: 30px;
+                position:absolute;
+                background-color:#58a;
+                animation: move linear 2s 5 alternate forwards; 
+            }
+
+            @keyframes move {
+                0% {
+                    transform:translateX(0);
+                }
+                33% {
+                    transform:translateX(170px);
+                }
+                66% {
+                    transform:translate(0, 170px);
+                }
+                100% {
+                    transform:translate(170px, 170px);
+                }
+            }
+
 
         </style>
     </head>
@@ -236,11 +270,18 @@
         <!-- <div class="container"></div> -->
 
 
-        <div class="container">
+        <!-- <div class="container"> -->
 
             <!-- <div class="child left"></div>
             <div class="child right"></div>
             <div class="bottom"></div> -->
+        <!-- </div> -->
+
+        <!-- z变换 -->
+        
+        <div class="container">
+
+            <div class="child"></div>
         </div>
         
 
