@@ -200,11 +200,11 @@
             } */
 
             /* z变换 */
-            .container{
+            /* .container{
                 width: 200px;
                 height: 200px;
                 background-color: #fb3;
-                /* border: 1px solid black; */
+                border: 1px solid black;
                 margin:100px auto;
                 position:relative;
             }
@@ -230,8 +230,39 @@
                 100% {
                     transform:translate(170px, 170px);
                 }
+            } */
+
+            /* *{
+                padding: 0;
+                margin: 0;;
+            } */
+
+            /* rect */
+            /* .container{
+                background-color: aquamarine;
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                position: absolute;
+                animation: move 5s linear infinite;    
+            } */
+
+            
+            .container{
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
             }
 
+            .img-scale{
+                width: 100%;
+                transition: 0.5s all;
+            }
+
+            .img-scale:hover{
+
+                transform: scale(1.2);
+            }
 
         </style>
     </head>
@@ -279,9 +310,14 @@
 
         <!-- z变换 -->
         
-        <div class="container">
+        <!-- <div class="container">
 
             <div class="child"></div>
+        </div> -->
+
+        <div class="container">
+
+            <img src="./img/blog03.jpg" alt="test" class="img-scale">
         </div>
         
 
