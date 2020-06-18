@@ -199,5 +199,20 @@
             childrenNodes[i].style.backgroundColor = 'yellow'
         }
     }
+
+    document.getElementById('test-wirte').innerHTML = 'banyuan';
+
+    var para = document.createElement('p');
+	
+	var parent = document.getElementById('parent');
+	
+	parent.appendChild(para);
+	
+	para.innerHTML = 'hello';
+
+    var txt = document.createTextNode(' world');
+	
+	para.appendChild(txt);
+    
 </script>
 </html>
