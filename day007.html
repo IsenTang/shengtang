@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 
 <html>
+    <div class="main">
 
-    <div>
-
-        <div class="test" id="test">
-            <div class='test' id='test-wirte'></div>
-            <!-- 查看节点 -->
-            <input type="text" id="input" value="123" class='input-test'>
     
-            <div id='main'>
+    </div>
+
+    <button onclick="ajax()">
+        ajax
+    </button>
+    
+    
+    <button onclick="test()">
+        test
+    </button>
+    <!-- <div> -->
+
+        <!-- <div class="test" id="test"> -->
+            <!-- <div class='test' id='test-wirte'></div> -->
+            <!-- 查看节点 -->
+            <!-- <input type="text" id="input" value="123" class='input-test'> -->
+    
+            <!-- <div id='main'> -->
                 <!-- test -->
-                <div class="content red"></div>
+                <!-- <div class="content red"></div>
     
                 <div class="content"></div>
     
@@ -22,7 +34,7 @@
     
             </div>
         </div>
-    </div>
+    </div> -->
     
     <style>
     
@@ -292,20 +304,46 @@
     // $(".test div");
 
     //过滤选择器
-    $('div:empty');
+    // $('div:empty');
 
     // $("div:contains('123')");
     
 
     // dom操作
 
-    var div = $("<div>我是文本节点</div>")
-    $('#test').append(div);
+    // var div = $("<div>我是文本节点</div>")
+    // $('#test').append(div);
 
-    document.getElementById('test').appendChild(
-        document.createElement('div')
-        .appendChild(document.createTextNode('我是文本节点'))
-    )
+    // document.getElementById('test').appendChild(
+    //     document.createElement('div')
+    //     .appendChild(document.createTextNode('我是文本节点'))
+    // )
+
+    /* ajax */
+    function ajax(){
+
+        $.ajax({
+            type : "POST",
+            // async : true, 
+            url : 'http://192.168.10.73:10001/banyuan/ajax',
+            data : {status:'time'},
+            success : function(result) {
+
+                
+                $('.main').html("<span>成功！</span>");
+            },
+            error : function(error){
+                
+                $('.main').html("<span>失败！</span>");
+            }
+            });
+    }
+
+
+    function test(){
+
+        console.log(1);
+    }
 
 </script>
 </html>
