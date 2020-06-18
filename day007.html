@@ -38,6 +38,8 @@
         }
     </style>
 
+<script src="./jquery3.5.js"></script>
+
 <script>
 
     /* 引用传递 */
@@ -271,6 +273,39 @@
     // let text = prompt('请输入一段文字','...');
 
     // console.log(text);
+
+    // id选择器
+    // console.log($('#input').val())
+
+    // let input = document.getElementById('input')
+
+    // console.log(input.getAttribute('value'));
+
+    // // 类选择器
+    // $('.test')
+
+    // 层级选择器
+    // 子元素
+    // $('.test > div');
+
+    // 后代
+    // $(".test div");
+
+    //过滤选择器
+    $('div:empty');
+
+    // $("div:contains('123')");
     
+
+    // dom操作
+
+    var div = $("<div>我是文本节点</div>")
+    $('#test').append(div);
+
+    document.getElementById('test').appendChild(
+        document.createElement('div')
+        .appendChild(document.createTextNode('我是文本节点'))
+    )
+
 </script>
 </html>
